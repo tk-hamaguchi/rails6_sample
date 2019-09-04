@@ -42,3 +42,5 @@ end
 
 gem 'rails-i18n'
 gem 'config'
+
+gem 'dotenv-rails'
