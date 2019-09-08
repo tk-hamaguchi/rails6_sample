@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.3'
+ruby '2.6.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0'
@@ -41,3 +41,20 @@ end
 # gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'rails-i18n'
+gem 'config'
+
+gem 'dotenv-rails'
+gem 'haml-rails'
+gem 'simple_form'
+group :development, :test do
+  gem 'rspec-rails', '~> 3.8'
+  gem 'rails-controller-testing', require: false
+  gem 'rspec-its'
+  gem 'rspec_junit_formatter'
+end
+
+group :development, :test do
+end
+
+group :development, :test do
+end
