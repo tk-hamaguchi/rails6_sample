@@ -35,5 +35,5 @@ jobs:
       run: |
         gem install bundler
         bundle install --jobs 4 --retry 3 --deployment
-        bundle exec rails yarn:install db:setup
+        bundle exec rails yarn:install db:setup assets:precompile
         bundle exec rake
